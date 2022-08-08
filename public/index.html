@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat-App</title>
+    <style>
+        #sendLocation {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <h3>Chat app</h3>
+
+    <form id="msg-form">
+        <input name="message" placeholder="message">
+        <button>Send</button>
+    </form>
+
+    <button id="sendLocation">Send Location</button>
     
-    <button id="increament">+1</button>
+    <!-- <button id="increament">+1</button> -->
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/chat.js"></script>
 </body>
 </html>
